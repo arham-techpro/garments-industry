@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* ==========================================
+CSS Reset
+========================================== */
+
+*,p,ul,ol,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+
+/* ==============================
+Colors
+============================== */
+:root{
+    --brand-color-a: #37236B;
+    --brand-color-b: #EC255A;
+    --brand-color-c: #F5F5F5;
+    --brand-color-d: #2D2D2D;
+}
+
+.brand-color-a,.hover-brand-color-a:hover{
+    color: var(--brand-color-a);
+}
+.brand-color-b,.hover-brand-color-b:hover{
+    color: var(--brand-color-a);
+}
+.brand-color-c,.hover-brand-color-c:hover{
+    color: var(--brand-color-a);
+}
+.brand-color-d,.hover-brand-color-d:hover{
+    color: var(--brand-color-a);
+}
+
+.bg-a,.hover-bg-a:hover{
+    background: var(--brand-color-a);
+}
+.bg-b,.hover-bg-b:hover{
+    background: var(--brand-color-b);
+}
+.bg-c,.hover-bg-c:hover{
+    background: var(--brand-color-c);
+}
+.bg-d,.hover-bg-d:hover{
+    background: var(--brand-color-d);
+}
+
+
+/* ==============================
+Resuable Componant
+============================== */
+.full-width{
+    width: 100%;
+}
+.ease-tran{
+    transition: .3s ease;
+}
+.cursor-ponter{
+    cursor: pointer;
+}
+.button{
+    padding: 16px 24px;
+}
+
+
+/* ==============================
+Header
+============================== */
+
+
+/* ==============================
+Bannner Section
+============================== */
+
+
+/* ==============================
+Overview Section
+============================== */
+
+
+/* ==============================
+About Section
+============================== */
+
+
+/* ==============================
+Product Section
+============================== */
+
+
+/* ==============================
+Product Showcase Section
+============================== */
+
+
+/* ==============================
+Contactus Section
+============================== */
+
+
+/* ==============================
+Footer Section
+============================== */
+
+
