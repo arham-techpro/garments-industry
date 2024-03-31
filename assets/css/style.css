@@ -4,81 +4,234 @@
 CSS Reset
 ========================================== */
 
-*,p,ul,ol,h1,h2,h3,h4,h5,h6{
+*,
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-html{
+ul,
+ol{
+    list-style: none;
+}
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: "Inter", sans-serif;
 }
 
 /* ==============================
 Colors
 ============================== */
-:root{
+:root {
     --brand-color-a: #37236B;
     --brand-color-b: #EC255A;
     --brand-color-c: #F5F5F5;
     --brand-color-d: #2D2D2D;
 }
 
-.brand-color-a,.hover-brand-color-a:hover{
-    color: var(--brand-color-a);
-}
-.brand-color-b,.hover-brand-color-b:hover{
-    color: var(--brand-color-a);
-}
-.brand-color-c,.hover-brand-color-c:hover{
-    color: var(--brand-color-a);
-}
-.brand-color-d,.hover-brand-color-d:hover{
+.brand-color-a,
+.hover-brand-color-a:hover {
     color: var(--brand-color-a);
 }
 
-.bg-a,.hover-bg-a:hover{
+.brand-color-b,
+.hover-brand-color-b:hover {
+    color: var(--brand-color-b);
+}
+
+.brand-color-c,
+.hover-brand-color-c:hover {
+    color: var(--brand-color-c);
+}
+
+.brand-color-d,
+.hover-brand-color-d:hover {
+    color: var(--brand-color-d);
+}
+
+.green-text {
+    color: #19A11E;
+}
+
+.bg-a,
+.hover-bg-a:hover {
     background: var(--brand-color-a);
 }
-.bg-b,.hover-bg-b:hover{
+
+.bg-b,
+.hover-bg-b:hover {
     background: var(--brand-color-b);
 }
-.bg-c,.hover-bg-c:hover{
+
+.bg-c,
+.hover-bg-c:hover {
     background: var(--brand-color-c);
 }
-.bg-d,.hover-bg-d:hover{
+
+.bg-d,
+.hover-bg-d:hover {
     background: var(--brand-color-d);
 }
 
+.bg-tran,
+.hover-bg-tran:hover {
+    background: transparent;
+}
 
 /* ==============================
 Resuable Componant
 ============================== */
-.full-width{
+.full-width {
     width: 100%;
 }
-.ease-tran{
+
+.ease-tran {
     transition: .3s ease;
 }
-.cursor-ponter{
+
+.cursor-pointer {
     cursor: pointer;
 }
-.button{
+
+.button {
     padding: 16px 24px;
+}
+
+.bl {
+    border-left: 1px solid #000;
+}
+.br {
+    border-right: 1px solid var(--brand-color-d);
+}
+
+.bb-light {
+    border-bottom: 1px solid #E2E2E2;
+}
+.b-dark{
+    border: 1px solid var(--brand-color-d);
+}
+
+
+.custom-container {
+    width: 1280px;
+    margin: auto;
 }
 
 
 /* ==============================
+Size and Specing
+============================== */
+.font-12 {
+    font-size: 12px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-56 {
+    font-size: 56px;
+}
+.font-64 {
+    font-size: 64px;
+}
+
+.lh-110 {
+    line-height: 110%;
+}
+
+.py-120{
+    padding: 120px 0px;
+}
+.py-80{
+    padding: 80px 0px;
+}
+
+/* ==============================
 Header
 ============================== */
+.custom-nav .nav-link.active {
+    color: var(--brand-color-b);
+    font-weight: bold;
+}
+
+.custom-nav .nav-item:not(:last-child) {
+    margin-right: 32px;
+}
 
 
 /* ==============================
 Bannner Section
 ============================== */
+
+.banner {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.76) 42.56%, rgba(255, 255, 255, 0.00) 56.18%), url('../img/banner-image.jpg') center / cover no-repeat;
+}
+
+.play-button {
+    width: 52px;
+    height: 52px;
+}
+
+.play-button-container {
+    border: 1px solid var(--brand-color-a);
+}
+
+.box-video {
+    line-height: 0;
+    display: block;
+    border: 5px solid #fff;
+    position: relative;
+}
+
+.box-video .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 5px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 99%;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.box-video .overlay:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(black, 0.3);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
 
 
 /* ==============================
@@ -109,5 +262,3 @@ Contactus Section
 /* ==============================
 Footer Section
 ============================== */
-
-
