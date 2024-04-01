@@ -459,3 +459,13 @@ Responsive
         height: 54px !important;
     }
 }
+@media screen and (max-width: 400px) {
+    .font-56{
+        font-size: 28px;
+    }.font-30{
+        font-size: 24px;
+    }
+    .button {
+        padding: 14px 20px;
+    }
+}
