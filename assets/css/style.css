@@ -306,7 +306,8 @@ Service Section
     margin-bottom: 25px;
 }
 .working-showcase-box:hover img{
-    transform: rotate(10deg) scale(1.1);
+    transform: scale(1.1);
+    opacity: .7;
 }
 
 /* ==============================
