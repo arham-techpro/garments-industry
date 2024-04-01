@@ -237,9 +237,9 @@ Bannner Section
     height: 100%;
     width: 100%;
     content: '';
-    background:#37236b78;
+    background:#37236b9b;
     border-radius: 100%;
-    animation: play_animation linear 3s infinite;
+    animation: play_animation linear 1s infinite;
     z-index: -1;
 }
 
@@ -247,11 +247,10 @@ Bannner Section
     0%{
         scale: 1;
     }
-    50%{
-        scale: 1.3;
-    }
+    
     100%{
-        scale: 1;
+        scale: 1.4;
+        background: transparent;
     }
 }
 
