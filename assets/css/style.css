@@ -406,14 +406,16 @@ Responsive
         gap: 0px 20px !important;
         width: 300px;
     }
-    .overview-container{
-        justify-content: unset !important;
-        gap: 24px 0px;
+    .overview-container {
+        justify-content: space-between !important;
+        gap: 16px 0px;
     }
     .overview-box {
         border-right: none;
         padding-right: 0px !important;
-        width: 50%;
+        width: 48%;
+        border: 1px solid var(--brand-color-d);
+        padding: 10px 0px;
     }
     .overview-box:last-child{
         width: 100%;
@@ -458,8 +460,9 @@ Responsive
     .form-control{
         height: 54px !important;
     }
+    
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     .font-56{
         font-size: 28px;
     }.font-30{
