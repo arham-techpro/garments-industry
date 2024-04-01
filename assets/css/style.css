@@ -333,6 +333,129 @@ footer{
 Responsive
 ============================== */
 @media screen and (max-width: 1300px) {
-    
+    .custom-container{
+        width: 100%;
+        padding:0px 25px;
+    }
 }
 
+@media screen and (max-width: 992px) {
+    
+    .responsive-d-none{
+        display: none !important;
+    }
+    .banner {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.76) 55.56%, rgb(255 255 255 / 0%) 80.18%), url(../img/banner-image.jpg) center / cover no-repeat;
+    }
+    .font-56 {
+        font-size: 36px;
+    }
+    .fs-4{
+        font-size: 20px !important;
+    }
+
+    .responsive-section-gap{
+        margin-bottom: 30px;
+    }
+
+    .ps-res-none{
+        padding-left: 0 !important;
+    }
+    .pe-res-none{
+        padding-right: 0 !important;
+    }
+    .ms-res-none{
+        margin-left: 0 !important;
+    }
+    .me-res-none{
+        margin-right: 0 !important;
+    }
+    .custom-nav .nav-item:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+    .custom-nav .nav-item:first-child {
+        margin-top: 24px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .overview-container{
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .font-64 {
+        font-size: 54px;
+    }
+    .res-md-flex-warp{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 600px) {
+    .custom-container {
+        padding: 0px 20px;
+    }
+     
+    .font-64,.font-56{
+        font-size: 34px;
+    }
+    .banner-slogan{
+        font-size: 14px !important;
+    }
+    .banner-certificate-client{
+        gap: 0px 20px !important;
+        width: 300px;
+    }
+    .overview-container{
+        justify-content: unset !important;
+        gap: 24px 0px;
+    }
+    .overview-box {
+        border-right: none;
+        padding-right: 0px !important;
+        width: 50%;
+    }
+    .overview-box:last-child{
+        width: 100%;
+    }
+    .fs-4,.fs-5{
+        font-size: 16px !important;
+    }
+    .fs-1{
+        font-size: 28px !important;
+    }
+
+    .ps-res-sm-none{
+        padding-left: 0 !important;
+    }
+    .pe-res-sm-none{
+        padding-right: 0 !important;
+    }
+    .ms-res-sm-none{
+        margin-left: 0 !important;
+    }
+    .me-res-sm-none{
+        margin-right: 0 !important;
+    }
+    .d-row-res-sm{
+        flex-direction: column;
+    }
+    .responsive-sm-gap{
+        margin-bottom: 20px;
+    }
+    .about .gap-4{
+        gap: 20px !important;
+    }
+    .pt-120{
+        padding-top: 80px;
+    }
+    .pb-95 {
+        padding-bottom: 55px;
+    }
+    .contact-us-section {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0.95) 0.35%, rgba(255, 255, 255, 0.76) 70.3%, rgba(255, 255, 255, 0.00) 100.91%), url(../img/contact-image.jpg) center / cover no-repeat;
+    }
+    .form-control{
+        height: 54px !important;
+    }
+}
