@@ -37,6 +37,7 @@ Colors
     --brand-color-a: #37236B;
     --brand-color-b: #EC255A;
     --brand-color-c: #F5F5F5;
+    --brand-color-c-2: #F9F9F9;
     --brand-color-d: #2D2D2D;
     --brand-color-para: #B8B8B8;
 }
@@ -82,6 +83,10 @@ Colors
 .bg-c,
 .hover-bg-c:hover {
     background: var(--brand-color-c);
+}
+.bg-c-2,
+.hover-bg-c-2:hover {
+    background: var(--brand-color-c-2);
 }
 
 .bg-c-op-1{
@@ -132,6 +137,9 @@ Resuable Componant
 }
 .b-dark{
     border: 1px solid var(--brand-color-d);
+}
+.border-b{
+    border: 1px solid var(--brand-color-b);
 }
 .fw-500{
     font-weight: 500;
@@ -309,6 +317,34 @@ Service Section
     transform: scale(1.1);
     opacity: .7;
 }
+.product-box {
+    margin: 0px 10px;
+}
+
+/* ==============================
+Product Video Section
+============================== */
+.play_video{
+    opacity: 0;
+    z-index: -1;
+}
+.product-box-image::before{
+    content: '';
+    background: linear-gradient(90deg, transparent, #37236b12, #37236b08);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: ease .3s;
+}
+.product-box-image:hover::before{
+    transform: scaleX(1);
+
+}
 
 /* ==============================
 Contactus Section
@@ -332,6 +368,11 @@ footer{
 /* ==============================
 Responsive
 ============================== */
+@media screen and (min-width: 1600px) {
+    .banner{
+        height: 100vh;
+    }
+}
 @media screen and (max-width: 1300px) {
     .custom-container{
         width: 100%;
@@ -455,6 +496,9 @@ Responsive
     .pt-120{
         padding-top: 80px;
     }
+    .py-120{
+        padding: 80px 0px;
+    }
     .pb-95 {
         padding-bottom: 55px;
     }
@@ -463,6 +507,12 @@ Responsive
     }
     .form-control{
         height: 54px !important;
+    }
+    .slick-prev{
+        left: -5px;
+    }
+    .slick-next{
+        right: -5px;
     }
     
 }
